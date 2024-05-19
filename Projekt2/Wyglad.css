@@ -1,0 +1,103 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-transform: capitalize;
+    transition: all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+
+.tytul h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#ffc107; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .tytul h1 span {
+    margin-top: 5px;
+      font-size:15px; color:#ffc107; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .tytul h1 span:after,.tytul h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+
+.galeria{
+    min-height: 100vh;
+    background: #2e2e2e; 
+    padding-bottom: 100px;
+    color: #d4d4d4; 
+}
+
+.galeria .sterowanie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.galeria .sterowanie .przycisk {
+    height: 40px;
+    width: 160px;
+    background: #4a4a4a; 
+    color: #d4d4d4; 
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+    border: 2px solid #d4d4d4; 
+}
+
+.galeria .sterowanie .przycisk.aktywny{
+    background: #3b3b3b; 
+    color: #ffc107; 
+    border-color: #ffc107; 
+}
+
+.galeria .zdjencia_kontener{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria .zdjencia_kontener .obraz{
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border: 15px solid #4a4a4a; 
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    margin: 20px;
+}
+
+.galeria .zdjencia_kontener .obraz img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria .zdjencia_kontener .obraz:hover img{
+    transform: scale(1.4);
+    filter: grayscale(100%); 
+}
+
+.galeria .sterowanie .przycisk:before {
+    content: url('path-to-your-military-icon.png'); 
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
