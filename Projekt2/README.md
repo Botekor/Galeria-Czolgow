@@ -1,2 +1,0 @@
-"# Galeria-Czolgow" 
-"# Galeria-Czolgow" 
